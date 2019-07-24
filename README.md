@@ -1,2 +1,2 @@
--[ ] teste checklist
--[ ] teste2 checklist
+- [ ] teste checklist
+- [ ] teste2 checklist
