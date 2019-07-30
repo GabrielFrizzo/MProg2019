@@ -1,0 +1,6 @@
+env
+.*
+!.gitignore
+!.vimrc
+*~
+test_*
