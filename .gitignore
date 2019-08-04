@@ -4,3 +4,4 @@ env
 !.vimrc
 *~
 test_*
+*.out
