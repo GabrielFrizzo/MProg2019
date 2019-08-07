@@ -18,7 +18,7 @@ void preencherCasas(int l, int c)
 	else if(tabuleiro[l][c]=='P'){
 		if(tabuleiro[l-1][c+1]==' ' && l-1>=0 && c+1<8)
 			tabuleiro[l-1][c+1]='x';
-		if(tabuleiro[l-1][c-1]==' ' && l+1<8 && c-1>=0)
+		if(tabuleiro[l-1][c-1]==' ' && l-1>=0 && c-1>=0)
 			tabuleiro[l-1][c-1]='x';
 	}
 	else if(tabuleiro[l][c]=='r'||tabuleiro[l][c]=='R'){
@@ -66,7 +66,7 @@ void preencherCasas(int l, int c)
 			tabuleiro[l-1][c]='x';		
 		if(c+1 < 8 &&tabuleiro[l][c+1]==' ')
 			tabuleiro[l][c+1]='x';
-		if(c-1 > 0 &&tabuleiro[l][c-1]==' ')
+		if(c-1 >= 0 &&tabuleiro[l][c-1]==' ')
 			tabuleiro[l][c-1]='x';		
 		if(l+1 < 8 && c+1 < 8 &&tabuleiro[l+1][c+1]==' ')
 			tabuleiro[l+1][c+1]='x';
@@ -88,11 +88,11 @@ void preencherCasas(int l, int c)
 			tabuleiro[l-2][c-1]='x';		
 		if(l+1 < 8 && c+2 < 8 &&tabuleiro[l+1][c+2]==' ')
 			tabuleiro[l+1][c+2]='x';
-		if(l+1 < 8 && c-2 > 0 &&tabuleiro[l+1][c-2]==' ')
+		if(l+1 < 8 && c-2 >= 0 &&tabuleiro[l+1][c-2]==' ')
 			tabuleiro[l+1][c-2]='x';		
 		if(l-1 >= 0  && c+2 < 8 &&tabuleiro[l-1][c+2]==' ')
 			tabuleiro[l-1][c+2]='x';
-		if(l-1 >= 0 && c-2 < 8 &&tabuleiro[l-1][c-2]==' ')
+		if(l-1 >= 0 && c-2 >= 0 &&tabuleiro[l-1][c-2]==' ')
 			tabuleiro[l-1][c-2]='x';		
 		
 	}	
@@ -101,7 +101,7 @@ void preencherCasas(int l, int c)
 
 int main()
 {
-	scanf("%s", &fen);
+	while (scanf("%s", &fen) != EOF) {
 	
 	int tamanho = strlen(fen);
 	int linha = 0;
@@ -133,10 +133,15 @@ int main()
 				preencherCasas(linha, coluna);
 
 	int casas=0;
-	for(linha=0; linha<8; linha++)
-		for(coluna=0; coluna<8; coluna++)
+	for(linha=0; linha<8; linha++) {
+		for(coluna=0; coluna<8; coluna++) {
 			if(tabuleiro[linha][coluna]==' ')
 				casas++;
+//			printf("%c", tabuleiro[linha][coluna]);
+		}
+//		printf("\n");
+	}
 	printf("%d\n", casas);
+	}
 	return 0;
 }
