@@ -1,3 +1,5 @@
+# Dados dois numeros a e b, deve-se encontrar o quociente q e resto r de forma que r>0 e a=b*q+r
+
 #include<bits/stdc++.h>
 
 using namespace std;

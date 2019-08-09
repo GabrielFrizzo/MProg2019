@@ -1,3 +1,11 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *
+ *             Clube de Programação            *
+ *               UTFPR - 2019/2                *
+ *          Programadores: Laço Infinito       *
+ * * * * * * * * * * * * * * * * * * * * * * * */
+
+//Questão 1472 da URI - Triângulos
+
 #include<stdio.h>
 
 int main()
@@ -18,37 +26,35 @@ int main()
 			scanf("%d", &dist[i]);
 			soma_max+=dist[i];
 		}
-        if (soma_max % 3) {printf("0\n");continue;}
-		soma_max/=3;
-        qt = 0;
+        	if (soma_max % 3) {printf("0\n");continue;}
+			soma_max/=3;
+	        qt = 0;
 		p1 = 0;
 		p2 = 0;
 		soma1=0;
+		//pega a distancia dos dois primeiros pontos que podem formar um triangulo
 		while(soma1<soma_max)
 			soma1+=dist[p2++];
-  //      printf("p2: %d\n", p2);
-		p3=p2;	
+  		p3=p2;	
 		soma2=0;
+		//pega a distancia dos dois ultimos pontos que podem formar um triangulo
 		while(soma2<soma_max)
 			soma2+=dist[p3++];
-//        printf("p3: %d\n", p3);
-//		soma3=0;	
-//		for(i=p3; i<tam; i++)
-//			soma3+=dist[i];
 
 		paradaP1 = p2;
 		paradaP2 = p3;
 		paradaP3 = p1;
 		while(p1!=paradaP1 && p2!=paradaP2 && p3!=paradaP3)
 		{
-//            printf("%d %d\n", soma1, soma2);
+			//Se a distancia dos dois pares de pontos forem iguais à 1/3 do arco do circulo então é um triangulo
 			if(soma1 == soma2 && soma1 == soma_max)
 				qt++;
+			//verifica a distancia a partir do proximo ponto
 			soma1-=dist[p1];
-//			soma3+=dist[p1];
 			p1++;
 			if(p1==tam)
 				p1 = 0;
+			//verifica pontos mais distantes que podem formar um triangulo
 			while(soma1<soma_max)
 			{
 				soma1+=dist[p2];
@@ -60,7 +66,6 @@ int main()
 			while(soma2<soma_max)
 			{
 				soma2+=dist[p3];
-//				soma3-=dist[p3];
 				p3++;
 				if(p3==tam)
 					p3=0;

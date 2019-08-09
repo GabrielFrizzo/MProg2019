@@ -1,3 +1,5 @@
+# para cada posição em um tabuleiro de xadrez, deve-se saber quais dessas não tem peças ou não então sendo ameaçadas por outras peças
+
 #include<stdio.h>
 #include<string.h>
 
