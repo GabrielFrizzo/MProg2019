@@ -1,3 +1,7 @@
+""" Para cada coluna, devemos cortar o número de linhas "novas" em relação à coluna anterior.
+    Portanto, começando com prev = altura, devemos encontrar a diferença entre a altura da
+    coluna atual e à sua esquerda, e somar a diferença(quando positiva) ao total(count)"""
+
 while True:
     a, c = map(int, input().split())
     if (a,c) == (0,0):

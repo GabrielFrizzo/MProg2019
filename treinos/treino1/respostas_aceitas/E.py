@@ -1,3 +1,8 @@
+""" O sinal com tempo de ciclo = T fica verde quando t mod(2T) < T-5, onde t é o tempo atual em segundos.
+    Iteramos, portanto pelos 60*60*5 segundos = 18000s e identificamos quando todos os sinais estão verdes.
+    Para receber o input, lemos linha a linha até encontrarmos um 0. Para o output, usamos a função tempo_bonito(t)
+    para separar horas, minutos e segundos."""
+
 def tempo_bonito(t):
     h = int(t/3600)
     m = int((t%3600)/60)
