@@ -1,3 +1,5 @@
+// Usando bitset e fazendo a simulação, como orienta HaHa(2.2).
+
 #include <cstdio>
 #include <bitset>
 using namespace std;
