@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2915 - Mount Marathon</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2915 - Mount Marathon" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://resources.urionlinejudge.com.br/repository/contest.css" />
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2915</span>
+			<h1>Mount Marathon</h1>
+			<div>
+				<p>Por Inés Kereki <img src='https://resources.urionlinejudge.com.br/gallery/images/flags/uy.gif' alt='UY' /> Uruguay</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Mount Marathon is a solitaire game that is played using a regular deck of 52 cards. To start the game the player shuffles the deck and lays <strong>N</strong> cards face up on the table, forming a straight line of <strong>N</strong> piles, each pile having a single card. No other cards are used during the rest of the play. Then the player repeatedly moves a pile on top of another pile until no more movements are available. The goal of the game is to end up with the minimum number of piles. When moving a pile <strong>p</strong> on top of another pile <strong>q</strong>, the following conditions must hold:</p>
+
+<p>• Pile <strong>p</strong> must be a single-card pile.</p>
+
+<p>• The value of the only card in pile <strong>p</strong> must be greater than or equal the value of the card that is on top of pile <strong>q</strong>.</p>
+
+<p>• Pile <strong>q</strong> must be the next pile remaining immediately on the right of pile <strong>p</strong>.</p>
+
+<p>Figure (a) below shows a configuration with six cards at the beginning of the game. The player may move the fifth pile on top of the sixth pile, and then the second pile on top of the third pile; since no more movements are available, this would conclude the game with four piles remaining, as it can be seen in figure (b). However, in this case it is possible to end up the game with just the three piles that appear in figure (c).</p>
+
+<p class="center"><img alt="" src="https://resources.urionlinejudge.com.br/gallery/images/problems/UOJ_2915.png"></p>
+
+<p>Given the initial piles, you must determine the minimum number of piles that it is possible to obtain at the end of the game.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>The first line contains an integer <strong>N</strong> (1 ≤<strong> N</strong> ≤ 52) representing the number of cards in the game. The second line contains <strong>N</strong> integers <strong>C<sub>1</sub></strong>, <strong>C<sub>2</sub></strong>, . . . , <strong>C<sub>N</sub></strong> (1 ≤ <strong>C<sub>i</sub></strong> ≤ 13 for <strong>i</strong> = 1, 2, . . . , <strong>N</strong>) indicating the values of the cards in the initial piles, from left to right. Each card value appears at most four times.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Output a single line with an integer indicating the minimum number of piles that it is possible to obtain at the end of the game.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>6</p>
+
+<p>5 8 6 6 10 4</p>
+
+						</td>
+						<td>
+							<p>3</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>1</p>
+
+<p>13</p>
+
+                </td>
+                <td>
+                    <p>1</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>5</p>
+
+<p>2 4 6 8 10</p>
+
+                </td>
+                <td>
+                    <p>5</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				Final Nacional da XXIII Maratona SBC de Programação
+			</p>
+		</div>
+	</body>
+</html>
+
