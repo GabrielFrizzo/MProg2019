@@ -1,3 +1,6 @@
+# Usar datetime do python facilita bastante essa questão, de resto,
+# Apenas formatação de input e output
+
 from datetime import datetime as dt
 from datetime import timedelta
 
@@ -5,7 +8,7 @@ TC = int(input())
 
 signs = {
 	'aquarius': {'start': (1,21), 'end': (2,19)},
-	'pisce': {'start': (2,20), 'end': (3,20)},
+	'pisces': {'start': (2,20), 'end': (3,20)},
 	'aries': {'start': (3,21), 'end': (4,20)},
 	'taurus': {'start': (4,21), 'end': (5,21)},
 	'gemini': {'start': (5,22), 'end': (6,21)},
