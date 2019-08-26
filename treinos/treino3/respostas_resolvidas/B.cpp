@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main()
 {
@@ -10,16 +12,16 @@ int main()
 		dia = 0;
 		U+=L;
 		T=0;
-		while(U>=0 && T>=0){
+		while(T>=0){
 			dia++;
 			U-=L;
-			T+=U;
+			T+=max(U,0.0);
 			if(T>H)
 				break;
 			T-=D;
 		}
 		if(T>=H)
-			printf("sucess on day %d\n", dia);
+			printf("success on day %d\n", dia);
 		else
 			printf("failure on day %d\n", dia);
 	}
