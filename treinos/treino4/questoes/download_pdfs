@@ -2,7 +2,7 @@
 
 
 curl https://uva.onlinejudge.org/external/107/10765.pdf > A-uva10765.pdf
-curl https://www.urionlinejudge.com.br/repository/UOJ_1953.html > B-uri1954.html
+curl https://www.urionlinejudge.com.br/repository/UOJ_1954.html > B-uri1954.html
 curl https://www.urionlinejudge.com.br/repository/UOJ_1217.html > C-uri1217.html
 curl https://uva.onlinejudge.org/external/108/10812.pdf > D-uva10812.pdf
 curl https://www.urionlinejudge.com.br/repository/UOJ_1955.html > E-uri1955.html
