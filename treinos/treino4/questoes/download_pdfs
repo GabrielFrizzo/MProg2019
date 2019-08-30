@@ -1,0 +1,13 @@
+#! /bin/bash
+
+
+curl https://uva.onlinejudge.org/external/107/10765.pdf > A-uva10765.pdf
+curl https://www.urionlinejudge.com.br/repository/UOJ_1953.html > B-uri1954.html
+curl https://www.urionlinejudge.com.br/repository/UOJ_1217.html > C-uri1217.html
+curl https://uva.onlinejudge.org/external/108/10812.pdf > D-uva10812.pdf
+curl https://www.urionlinejudge.com.br/repository/UOJ_1955.html > E-uri1955.html
+curl https://www.urionlinejudge.com.br/repository/UOJ_1298.html > F-uri1298.html
+curl https://www.urionlinejudge.com.br/repository/UOJ_1910.html > G-uri1910.html
+curl https://www.urionlinejudge.com.br/repository/UOJ_1706.html > H-uri1706.html
+curl https://www.urionlinejudge.com.br/repository/UOJ_1908.html > I-uri1908.html
+
